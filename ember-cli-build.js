@@ -21,7 +21,7 @@ module.exports = function(defaults) {
 
   app.import('bower_components/bootstrap/dist/css/bootstrap.css');
   app.import('bower_components/bootstrap/dist/css/bootstrap.css.map', {
-    destDir: 'asserts'
+    destDir: 'assets'
   });
 
   return app.toTree();
