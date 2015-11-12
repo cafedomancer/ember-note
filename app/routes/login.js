@@ -9,7 +9,7 @@ export default Ember.Route.extend({
         if (users.get('length') === 1) {
           let user = users.get('firstObject');
           this.controllerFor('application').set('user', user);
-          this.transitionTo('notebooks');
+          this.transitionTo('notebooks', user.get('id'));
         } else {
           console.log('unexpected query result');
         }
