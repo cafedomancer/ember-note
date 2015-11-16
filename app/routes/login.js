@@ -13,7 +13,7 @@ export default Ember.Route.extend({
         } else {
           console.log('unexpected query result');
         }
-      });;
+      });
     }
   }
 });
