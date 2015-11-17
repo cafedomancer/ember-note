@@ -11,7 +11,7 @@ export default Ember.Route.extend({
         console.log(notebook);
 
         let note = this.store.createRecord('note', {
-          title: this.controller.get('title');
+          title: this.controller.get('title'),
           notebook: notebook
         });
 
